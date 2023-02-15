@@ -45,10 +45,24 @@
       y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
     })(window, document, "clarity", "script", "fk7epdw35x");
   </script>
+
+<script>
+  function copyToClipboard(text) {
+    var input = document.createElement('input');
+    input.setAttribute('value', text);
+    document.body.appendChild(input);
+    input.select();
+    document.execCommand('copy');
+    document.body.removeChild(input);
+  }
+  </script>
+  
+
   <!-- Stylesheets -->
   <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
   <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Roboto'>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.2/css/all.css" integrity="sha384-jFieLoxygLdKVrVs5r+jj5rLX2v08nWEl4P7/q4+4EpvJ63VjKdErS/NkVJMI+gE" crossorigin="anonymous">
   <style>
     html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif}
   </style>
@@ -70,11 +84,13 @@
             <p><i class="fa fa-briefcase fa-fw w3-margin-right w3-large w3-text-teal"></i>Software Engineer by DevOps methodology</p>
             <p><i class="fa fa-home fa-fw w3-margin-right w3-large w3-text-teal"></i>Vancouver, Canada</p>
             <p><i class="fa fa-phone fa-fw w3-margin-right w3-large w3-text-teal"></i>+1(778)987-5773</p>
-            <p><i class="fa fa-linkedin fa-fw w3-margin-right w3-large w3-text-teal"></i><a href="https://www.linkedin.com/in/levko-kravchuk-780ba556/" target="_blank">Linkedin</a></p>
-            <p><i class="fa fa-github fa-fw w3-margin-right w3-large w3-text-teal"></i><a href="https://github.com/LEO2008k" target="_blank">Github</a></p>
+            <p><i class="fa fa-linkedin fa-fw w3-margin-right w3-large w3-text-teal"></i><a href="https://www.linkedin.com/in/levko-kravchuk-780ba556/" target="_blank">Linkedin</a> <button onclick="copyToClipboard('https://www.linkedin.com/in/levko-kravchuk-780ba556/')"> <i class="fa fa-copy fa-fw w3-text-teal" style="font-size: 16px;"></i> </button></p>
+            <p><i class="fa fa-github fa-fw w3-margin-right w3-text-teal" style="font-size: 20px;"></i> <a href="https://github.com/LEO2008k" target="_blank">Github</a>    <button onclick="copyToClipboard('https://github.com/LEO2008k')"> <i class="fa fa-copy fa-fw w3-text-teal" style="font-size: 16px;"></i> </button> </p>
             <p><i class="fa fa-envelope fa-fw w3-margin-right w3-large w3-text-teal"></i><a href="mailto:levko.kravchuk@outlook.com">levko.kravchuk@outlook.com</a></p>
-            <p><i class="fa fa-download fa-fw w3-margin-right w3-large w3-text-teal"></i><a href="Levko_Kravchuk.pdf" download="Levko_Kravchuk.pdf" style="text-decoration:none">CV Levko Kravchuk</a> </p>
+            <p><i class="fa fa-download fa-fw w3-margin-right w3-large w3-text-teal"></i><a href="Levko_Kravchuk.pdf" download="Levko_Kravchuk.pdf" style="text-decoration:none">CV Levko Kravchuk</a></p>
             <p><i class="fa fa-download fa-fw w3-margin-right w3-large w3-text-teal"></i><a href="Levko_Kravchuk_cover_letter.pdf" download="Levko_Kravchuk_cover_letter.pdf" style="text-decoration:none">Cover letter Levko Kravchuk</a> </p>
+            <p><i class="fa fa-copy fa-fw w3-margin-right w3-large w3-text-teal"></i><a href="Levko_Kravchuk_cover_letter.pdf" download="Levko_Kravchuk_cover_letter.pdf" style="text-decoration:none">Cover letter Levko Kravchuk</a> </p>
+
             <hr>
   
             <p class="w3-large"><b><i class="fa fa-asterisk fa-fw w3-margin-right w3-text-teal"></i>Technical Skills</b></p>
@@ -163,7 +179,7 @@
           <div class="w3-container">
             <h5 class="w3-opacity"><b>Advanced Internet Technology (AIT) (Lviv, Ukraine; Fayettwille, North Caroline, USA)</b></h5>
             <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Apr 2020 - Nov 2020 </h6>
-            <p>Tier 1 Support, Linux, Windows OS, Network, DNS, Security scans, troubleshooting. </p>
+            <p>Tier 1 Support, Linux, Windows OS, Network, DNS, Security scans, troubleshooting, cPanel, GitLab. </p>
             <p style="color:green";>Improved skills: Linux, Monitoring, DNS, DHCP, Security scanning, scripting, Nginx, Apache, ESXi.</p> 
             <hr>
           </div>
