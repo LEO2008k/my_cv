@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="description" content="Levkos web page">
+  <meta name="keywords" content="HTML, JavaScript">
+  <meta name="author" content="Levko Kravchuk">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Levko's web site</title>
+  <style>
+    .collapsible {
+      background-color: #777;
+      color: white;
+      cursor: pointer;
+      padding: 18px;
+      width: 100%;
+      border: none;
+      text-align: left;
+      outline: none;
+      font-size: 15px;
+    }
+    .active, .collapsible:hover {
+      background-color: #555;
+    }
+    .content {
+      padding: 0 18px;
+      display: none;
+      overflow: hidden;
+      background-color: #f1f1f1;
+    }
+  </style>
+  
+   <!-- Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-3JH4GE4G5J"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-3JH4GE4G5J');
+  </script>
+  <!-- Clarity analytics -->
+  <script type="text/javascript">
+    (function(c,l,a,r,i,t,y){
+        c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+        t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+        y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+    })(window, document, "clarity", "script", "fwkwumg609");
+  </script> 
+
+<script>
+  function copyToClipboard(text) {
+    var input = document.createElement('input');
+    input.setAttribute('value', text);
+    document.body.appendChild(input);
+    input.select();
+    document.execCommand('copy');
+    document.body.removeChild(input);
+  }
+  </script>
+  
+
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Roboto'>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.2/css/all.css" integrity="sha384-jFieLoxygLdKVrVs5r+jj5rLX2v08nWEl4P7/q4+4EpvJ63VjKdErS/NkVJMI+gE" crossorigin="anonymous">
+  <style>
+    html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif}
+  </style>
+</head>
+<body class="w3-light-grey">
+  <!-- Page Container -->
+  <div class="w3-content w3-margin-top" style="max-width:1400px;">
+    <!-- The Grid -->
+    <div class="w3-row-padding">
+      <!-- Left Column -->
+      <div class="w3-third">
+        <div class="w3-white w3-text-grey w3-card-4">
+          <div class="w3-display-container">
+            <div class="w3-display-bottomleft w3-container w3-text-teal">
+              <h2>Levko Kravchuk</h2>
+            </div>
+          </div>
+          <div class="w3-container">
+            <p><i class="fa fa-briefcase fa-fw w3-margin-right w3-large w3-text-teal"></i>System/Network Administrator by DevOps methodology</p>
+            <p><i class="fa fa-home fa-fw w3-margin-right w3-large w3-text-teal"></i>Vancouver, British Columbia, Canada</p>
+            <p><i class="fa fa-phone fa-fw w3-margin-right w3-large w3-text-teal"></i>+1(778)987-5773</p>
+            <p><i class="fa fa-linkedin fa-fw w3-margin-right w3-large w3-text-teal"></i><a href="https://www.linkedin.com/in/levko-kravchuk/" target="_blank">Linkedin</a> <button onclick="copyToClipboard('https://www.linkedin.com/in/levko-kravchuk/')"> <i class="fa fa-copy fa-fw w3-text-teal" style="font-size: 16px;"></i> </button></p>
+            <p><i class="fa fa-github fa-fw w3-margin-right w3-text-teal" style="font-size: 20px;"></i><a href="https://github.com/LEO2008k" target="_blank">Github</a>    <button onclick="copyToClipboard('https://github.com/LEO2008k')"> <i class="fa fa-copy fa-fw w3-text-teal" style="font-size: 16px;"></i> </button> </p>
+            <p><i class="fa fa-envelope fa-fw w3-margin-right w3-large w3-text-teal"></i><a href="mailto:levko.kravchuk@outlook.com">levko.kravchuk@outlook.com</a></p>
+            <p><i class="fa fa-download fa-fw w3-margin-right w3-large w3-text-teal"></i><a href="Levko_Kravchuk_System_Administrator_Resume.pdf" download="Levko_Kravchuk_System_Administrator_Resume.pdf" style="text-decoration:none">To review My CV, please download me :)</a></p>
+            <!--<p><i class="fa fa-download fa-fw w3-margin-right w3-large w3-text-teal"></i><a href="Levko_Kravchuk_cover_letter.pdf" download="Levko_Kravchuk_cover_letter.pdf" style="text-decoration:none">Cover letter Levko Kravchuk</a> </p>-->
+            <hr>
+  
+            <div class="w3-large"><b><i class="fa fa-asterisk fa-fw w3-margin-right w3-text-teal"></i>Technical Skills</b></div>
+            <p>Programming Languages</p>
+            <div class="w3-light-grey w3-round-xlarge w3-small" style="border-left-style: solid;border-left-width: 0px;padding-left: 10px;padding-top: 5px;padding-bottom: 5px;">
+             <p>Bash </p>
+             <p>Python (scripting) </p>
+               
+            </div>
+            <p>Networks Technologies</p>
+            <div class="w3-light-grey w3-round-xlarge w3-small" style="border-left-style: solid;border-left-width: 0px;padding-left: 10px;padding-top: 5px;padding-bottom: 5px;">
+              <!-- <div class="w3-container w3-center w3-round-xlarge w3-teal" style="width:90%">90%</div> -->
+            <p>Vlan, 802.1 Q, Ethernet, VTP, STP, RSTP, EtherChanel (LACP), Bonding, DHCP, DHCPv6, IPv6 </p>
+             <!-- <div class="w3-container w3-center w3-round-xlarge w3-teal" style="width:65%">65%</div> -->
+            <p>DNS, FTP, TFTP, Telnet, SSH, SMTP, IMAP, POP3, etc. </p>
+             <!-- <div class="w3-container w3-center w3-round-xlarge w3-teal" style="width:89%">89%</div> -->
+  
+            </div>
+            <p>Security and Network Stability </p>
+            <div class="w3-light-grey w3-round-xlarge w3-small" style="border-left-style: solid;border-left-width: 0px;padding-left: 10px;padding-top: 5px;padding-bottom: 5px;">
+              <p>ACL, PPPoE, GRE tunneling, VPN, 6to4, IPv6 SLAAC, VRRP, Firewall(s), Passive DNS(pDNS) </p>
+             <!-- <div class="w3-container w3-center w3-round-xlarge w3-teal" style="width:55%">55%</div> -->
+  
+            </div>
+            <p>Data Bases</p>
+            <div class="w3-light-grey w3-round-xlarge w3-small" style="border-left-style: solid;border-left-width: 0px;padding-left: 10px;padding-top: 5px;padding-bottom: 5px;">
+              <p>Mysql, SQlite3, MariaDB </p>
+            </div>
+            <br>
+  
+            <p>Operating Systems</p>
+            <div class="w3-light-grey w3-round-xlarge w3-small" style="border-left-style: solid;border-left-width: 0px;padding-left: 10px;padding-top: 5px;padding-bottom: 5px;">
+              <p>Microsoft Windows XP/7/8/8.1/10/11 </p>
+            <!-- <div class="w3-container w3-center w3-round-xlarge w3-teal" style="width:60%">60%</div> -->
+            <p>Windows Server 2003, 2008r2, 2012, 2016 </p>
+            <!-- <div class="w3-container w3-center w3-round-xlarge w3-teal" style="width:38%">38%</div>-->
+            <p>Centos, RedHat, Ubuntu, FreeBSD </p>
+            
+            </div>
+            <br>
+  
+            <p>DevOps Tools</p>
+            <div class="w3-light-grey w3-round-xlarge w3-small" style="border-left-style: solid;border-left-width: 0px;padding-left: 10px;padding-top: 5px;padding-bottom: 5px;">
+              <p>Docker </p>
+             <!-- <div class="w3-container w3-center w3-round-xlarge w3-teal" style="width:40%">40%</div> -->
+            <p>Ansible </p>
+            <p>Nginx, Apache, Tomcat</p>
+             <!-- <div class="w3-container w3-center w3-round-xlarge w3-teal" style="width:20%">20%</div> -->
+            <p>Git, GitHub, Gerrit </p>
+             <!-- <div class="w3-container w3-center w3-round-xlarge w3-teal" style="width:40%">40%</div> -->
+            <p>Grafana, Nagios </p>
+            <p>Jenkins (Automation scripts)</p>
+             <!-- <div class="w3-container w3-center w3-round-xlarge w3-teal" style="width:40%">40%</div> -->
+            </div>
+            <br>
+            <p>Others</p>        
+              <div class="w3-light-grey w3-round-xlarge w3-small" style="border-left-style: solid;border-left-width: 0px;padding-left: 10px;padding-top: 5px;padding-bottom: 5px;">
+              <p>Galera cluster, Ha Proxy </p>
+              <p>Postfix, Microsoft Exchange Online, O365</p>
+              <p>Tenable.sc, Nessus </p>
+              <p>HTML</p>
+              <p>cURL, Dublin Traceroute, netcat, DNS over HTTPS </p>
+              <p>Jira, Confluence, Document writing, Root Cause Analyses, ITIL</p>
+          </div>
+  
+            <br>
+          </div>
+        </div><br>
+  
+      <!-- End Left Column -->
+      </div>
+  
+      <!-- Right Column -->
+      <div class="w3-twothird">
+
+        <div class="w3-container w3-card w3-white w3-margin-bottom">
+          <h2 class="w3-text-grey w3-padding-16"><i class="fa fa-suitcase fa-fw w3-margin-right w3-xxlarge w3-text-teal"></i>Work Experience</h2>
+          <div class="w3-container">
+            <h5 class="w3-opacity"><b>Freelancer</b></h5>
+            <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Jun 2023 - <span class="w3-tag w3-teal w3-round">Current</span></h6>
+            <p> Linux</p>
+            <p style="color:green";>Improved skills: GitHub </p>  
+            <hr>
+          </div>
+      
+          <div class="w3-container">
+            <h5 class="w3-opacity"><b>TietoEvry</b></h5>
+            <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Dec 2020 - Jun 2023</h6>
+            <p>Tenable.sc, Nessus scanners, Linux, Jenkins, Grafana, Artifactory (JFrog), Gerrit, Loki, PMP.  </p>
+            <p style="color:green";>Improved skills: Python, Linux, Monitoring (CheckMK, Grafana, Loki), Troubleshooting, Vulnerability scanning, scripting, Apache, ESXi, Docker, Jenkins, IPv6, Git. </p>  
+            <hr>
+          </div>
+          
+          <div class="w3-container">
+            <h5 class="w3-opacity"><b>Advanced Internet Technology (AIT) (Lviv, Ukraine; Fayetteville, North Caroline, USA)</b></h5>
+            <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Jun 2020 - Nov 2020 </h6>
+            <p>Tier 1 Support, Linux, Windows OS, Network, DNS, Security scans, SSHFS, troubleshooting, cPanel, GitLab. </p>
+            <p style="color:green";>Improved skills: Linux, Monitoring, DNS, DHCP, Security scanning, scripting, Nginx, Apache, ESXi.</p> 
+            <hr>
+          </div>
+          <div class="w3-container">
+            <h5 class="w3-opacity"><b>Software engineer IT Consultant and Support engineer at Honorary Consulate of Federal Republic of Germany (Lviv, Ukraine)</b></h5>
+            <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Sep 2018 - Jan 2023</h6>
+            <p>Supported and consulted about IT infrastructure, Clients OS, Network, Ubiquity, Windows 10/11, macOS.</p>
+            <p style="color:green";>Improved skills: Windows clients OS, Network devices.</p>
+            <hr>
+          </div>
+          <div class="w3-container">
+            <h5 class="w3-opacity"><b>DevOps at SoftServe (Lviv, Ukraine) </b></h5>
+            <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Mar 2018 - Mar 2020 </h6>
+            <p>Software Engineer at TIER 1 team(SOC). Responsibility: support and monitoring of IT Infrastructure via RedHat, CentOS, Jenkins, Grafana, Git, Puppet, Nagios, Prometheus, Bash, Observium, BigPanda, Cisco UCS, and ESXi.</p>
+            <p style="color:green";>Improved skills: Linux, Monitoring tools (Grafana, Nagios), scripting, Load Balancer.</p>
+            <hr>
+          </div>
+          <div class="w3-container">
+            <h5 class="w3-opacity"><b>SoftServe University (learned)</b></h5>
+            <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Sep 2017 - Dec 2017</h6>
+            <p>MariaDB, Ha Proxy, Locust, AWS EC2 instances, Autoscaling group, Docker, Tomcat, Git, Ansible, Eucalyptus, Bash. </p>
+            <hr>
+          </div>
+          <div class="w3-container">
+            <h5 class="w3-opacity"><b>Network and System-Administrator in Attorneys at Law “Pavlenko & Partners” (Lviv, Ukraine)</b></h5>
+            <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Jun 2012 - Jun 2017 </h6>
+            <p> Full-stack support of clients os: Windows XP/7/8/10, macOS, CentOS 6/7. Servers OS: Windows 2008r2, Remote Desktop Services, Mikrotik, UTM, mail server, Cisco Meraki SD-WAN, Cisco Meraki Wireless, Firewall, QoS, Group Policy, IDS/IPS, WSUS, Print server, Symantec Endpoint Security. </p><br>
+            <hr>
+          </div>
+          <div class="w3-container">
+            <h5 class="w3-opacity"><b>System-Administrator, Network Administrator at OurLan (Own business) (Lviv, Ukraine)</b></h5>
+            <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Jun 2008 - Mar 2015 </h6>
+            <p> Installed, maintained and administered LAN and WAN of ISP network; efficiently managed smart switches, routers, and billing. Installed and maintained fiber optics cables, installed SCS, Experience with , UTP/STP, cabling technologies - Category 5, Category 6, Single & Multi-Mode Fiber, Maintain Data Center (Tier III). Worked with TCP/IP and other relative technologies. </p><br>
+            <hr>
+          </div>
+  
+        </div>
+  
+  
+      <!-- End Right Column -->
+      </div>
+      
+    <!-- End Grid -->
+    </div>
+    
+    <!-- End Page Container -->
+  </div>
+  
+  <footer class="w3-container w3-teal w3-center w3-margin-top">
+    <p>Powered by <a href="https://www.linkedin.com/in/levko-kravchuk/" target="_blank">Levko Kravchuk</a></p>
+  </footer>
+  
+  </body>
+  </html>
