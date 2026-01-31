@@ -51,14 +51,91 @@ const translations = {
         btn_download_resume: "Завантажити моє резюме",
 
         // Work History Page
-        work_title: "Робоча історія",
+        work_title: "Історія роботи",
         work_subtitle: "Понад 15 років досвіду в IT",
-        work_current: "Теперішній час",
+        work_current: "Поточне місце",
         work_improved: "Покращені навички:",
 
-        // Awards Page
-        awards_title: "Нагороди та сертифікати",
-        awards_subtitle: "Професійні сертифікації та досягнення",
+        // Netskrt
+        work_netskrt_role: "LiveOps Engineer",
+        work_netskrt_date: "Травень 2025 - Вересень 2025 • 5 міс",
+        work_netskrt_desc: `Встановлення та налаштування RAID на серверах Linux, усунення технічних несправностей.
+• Забезпечення конфігурацій Linux за допомогою Ansible.
+• Налаштування фаєрволу UFW, оновлення системи та оптимізація продуктивності ('tuned').
+• Впровадження моніторингу цілісності файлів (inotify).
+• Моніторинг серверів Linux та CDN для забезпечення плавної відеострімінгу (Prometheus, Grafana, Zabbix).
+• Оптимізація доставки контенту через CDN, зменшення затримок.
+• Робота з Jira, JQL, CQL для документації.
+• Налаштування та дебаг мережі (curl, TCPDUMP), підтримка NetBox та DNS.
+• Встановлення та налаштування Kubernetes.`,
+
+        // mThreat
+        work_mthreat_role: "Cyber Security Research Engineer (Internship)",
+        work_mthreat_date: "Січень 2025 - Лютий 2025 • 2 міс",
+        work_mthreat_desc: `Успішне завершення стажування з фокусом на виявленні інтернет-аномалій та блокуванні ботнетів.
+• Розслідування фішингових листів та аналіз заголовків email.
+• Аналіз та додавання IP-адрес до списків репутації.
+• Практичний досвід покращення безпеки користувачів у продуктовому середовищі.`,
+
+        // TietoEVRY
+        work_tieto_role: "DevOps Engineer",
+        work_tieto_date: "Грудень 2020 - Липень 2023 • 2 роки 8 міс",
+        work_tieto_desc: `Основний інженер з підтримки Tenable Security Center ("Tenable.sc") та інфраструктури з понад 100 сканерів Nessus.
+• Використання Linux, Bash, Python, Jenkins, Gerrit, Git, Docker для автоматизації процесів.
+• Моніторинг та візуалізація: Grafana (метрики), Loki (логи), checkmk.
+• Автоматизація Python скриптів через Jenkins (сповіщення про статус сканерів).
+• Траблшутинг: OpenSSL, traceroute, mtr, curl.
+• Управління роботою через Kanban та Jira Query Language.
+• Розробка скриптів для сповіщень про SLA, покращення підтримки користувачів.`,
+
+        // AIT
+        work_ait_role: "System Administrator & DevOps",
+        work_ait_date: "Червень 2020 - Листопад 2020 • 6 міс",
+        work_ait_desc: `IT Support Specialist (Tier 1). Спеціалізація: Linux та Windows (Server 2012/2016).
+• Налаштування мережі, Windows AD, GPO, DNS.
+• Розслідування інцидентів безпеки після хакерських атак.
+• Налаштування DNS (Bind), підтримка бази даних WHOIS.
+• Розгортання вебсайтів на cPanel через GitLab pipelines.
+• Дотримання SLA та високий рівень задоволеності клієнтів.`,
+
+        // SoftServe
+        work_softserve_role: "DevOps at SoftServe (Lviv, Ukraine)",
+        work_softserve_date: "Березень 2018 - Березень 2020 • 2 роки",
+        work_softserve_desc: `Software Engineer у команді TIER 1 (SOC).
+Відповідальність: підтримка та моніторинг IT-інфраструктури через RedHat, CentOS, Jenkins, Grafana, Git, Puppet, Nagios, Prometheus, Bash, Observium, BigPanda, Cisco UCS та ESXi.
+
+Ключові досягнення та обов'язки:
+• Забезпечення своєчасної роботи віртуальних машин Red Hat та CentOS 7.
+• Використання Puppet для конфігурації та Ansible для оркестрації.
+• Дотримання практик ITIL (RFC) та надання RCA (Root Cause Analysis).
+• Значне зниження рівня "abuse rate", виведення IP з чорних списків.
+• Розробка скриптів автоматизації (Docker, Jenkins, Python).
+• Моніторинг метрик через Prometheus та візуалізація в Grafana.
+• Агрегація алертів Nagios через BigPanda, розслідування в Observium.
+• Управління віртуальними машинами на ESXi та Cisco UCS (vSphere).
+• Управління Load Balancer (виведення нод під час інцидентів/патчингу).`,
+
+        // Consulate
+        work_consulate_role: "IT Support (SysAdmin) & Consultant",
+        work_consulate_date: "Вересень 2018 - Січень 2023 • 4 роки 5 міс",
+        work_consulate_desc: `Почесне консульство ФРН у Львові.
+• IT Консультант: підтримка користувачів.
+• Налаштування Windows 10/11, O365, Enterprise Security.
+• Управління VM Ware ESXi, Firewall, IDS/IPS.
+• Навички: Network Security, TCP/IP, Git, CentOS.`,
+
+        // Pavlenko & Partners
+        work_pavlenko_role: "Network and System Administrator",
+        work_pavlenko_date: "Червень 2012 - Червень 2017 • 5 років 1 міс",
+        work_pavlenko_desc: `Full-Stack Support Specialist (Pavlenko & Partners).
+• Адміністрування клієнтських та серверних ОС (Windows Server 2003/2008 R2, macOS).
+• Мережеве адміністрування: Mikrotik (RouterOS), Cisco Meraki (SD-WAN, wireless).
+• Оптимізація мережі (QoS), безпека (IDS/IPS).
+• Впровадження VDI та RDS для віддаленого доступу.
+• Захист кінцевих точок (Symantec), анти-спам рішення (SPAMHAUSE).
+• Адміністрування Active Directory, DHCP, Print Servers.
+• Автоматизація: PowerShell, GPO.
+• Відновлення систем після вірусних атак (Linux tools, USB/PXE boot).`,
         awards_network: "Мережеві сертифікати",
         awards_security: "Кібербезпека",
         awards_education: "Освіта та навчання",
@@ -161,12 +238,88 @@ const translations = {
         work_current: "Current",
         work_improved: "Improved skills:",
 
-        // Awards Page
-        awards_title: "Awards & Certificates",
-        awards_subtitle: "Professional certifications and achievements",
-        awards_network: "Network Certificates",
-        awards_security: "Cybersecurity",
-        awards_education: "Education & Training",
+        // Netskrt
+        work_netskrt_role: "LiveOps Engineer",
+        work_netskrt_date: "May 2025 - Sep 2025 • 5 mos",
+        work_netskrt_desc: `Installed and configured RAID on Linux servers, troubleshooting technical issues.
+• Provisioned Linux configurations using Ansible.
+• Configured UFW firewall, applied system updates, tuned system using 'tuned'.
+• Implemented file integrity monitoring (inotify).
+• Monitored Linux servers and CDN performance (Prometheus, Grafana, Zabbix).
+• Optimized content delivery via CDN, reducing latency.
+• Worked with Jira, JQL, CQL for documentation.
+• Configured/debugged networks (curl, TCPDUMP), maintained NetBox and DNS.
+• Installed and configured Kubernetes.`,
+
+        // mThreat
+        work_mthreat_role: "Cyber Security Research Engineer (Internship)",
+        work_mthreat_date: "Jan 2025 - Feb 2025 • 2 mos",
+        work_mthreat_desc: `Completed internship focusing on detecting internet anomalies and blocking bot networks.
+• Investigated phishing emails and analyzed email headers.
+• Analyzed and added IP addresses to reputation lists.
+• Leveraged skills in a production environment to enhance user security.`,
+
+        // TietoEVRY
+        work_tieto_role: "DevOps Engineer",
+        work_tieto_date: "Dec 2020 - Jul 2023 • 2 yrs 8 mos",
+        work_tieto_desc: `Primary engineer supporting Tenable Security Center ("Tenable.sc") and 100+ Nessus scanners.
+• Utilized Linux, Bash, Python, Jenkins, Gerrit, Git, Docker for automation.
+• Monitoring & Visualization: Grafana (metrics), Loki (logs), checkmk.
+• Automated Python scripts via Jenkins (e.g., scanner status notifications).
+• Troubleshooting: OpenSSL, traceroute, mtr, curl.
+• Managed work via Kanban and Jira Query Language.
+• Developed scripts for SLA notifications to improve service quality.`,
+
+        // AIT
+        work_ait_role: "System Administrator & DevOps",
+        work_ait_date: "Jun 2020 - Nov 2020 • 6 mos",
+        work_ait_desc: `IT Support Specialist (Tier 1). Specialized in Linux & Windows (Server 2012/2016).
+• Network configuration, Windows AD, GPO, DNS.
+• Investigated and resolved security incidents following hacker breaches.
+• Configured DNS (Bind) and supported WHOIS database.
+• Deployed websites on cPanel using GitLab pipelines.
+• Committed to upholding SLAs and ensuring high user satisfaction.`,
+
+        // SoftServe
+        work_softserve_role: "DevOps at SoftServe (Lviv, Ukraine)",
+        work_softserve_date: "Mar 2018 - Mar 2020 • 2 yrs",
+        work_softserve_desc: `Software Engineer at TIER 1 team(SOC).
+Responsibility: support and monitoring of IT Infrastructure via RedHat, CentOS, Jenkins, Grafana, Git, Puppet, Nagios, Prometheus, Bash, Observium, BigPanda, Cisco UCS, and ESXi.
+
+Key Duties & Achievements:
+• Ensured timely operation of Red Hat and CentOS 7 VMs.
+• Used Puppet for configuration and Ansible for orchestration.
+• Followed ITIL practices (RFCs) and provided Root Cause Analysis (RCA).
+• Significantly reduced abuse rate, removing IPs from blacklists.
+• Developed automation scripts running in Docker/Jenkins.
+• Visualized metrics with Grafana and Prometheus.
+• Aggregated Nagios alerts using BigPanda; investigated incidents in Observium.
+• Managed VMs on ESXi and Cisco UCS (vSphere).
+• Managed Load Balancer (node removal/integration) for seamless operations.
+
+Improved skills: Linux, Monitoring tools (Grafana, Nagios), scripting, Load Balancer.`,
+
+        // Consulate
+        work_consulate_role: "IT Support (SysAdmin) & Consultant",
+        work_consulate_date: "Sep 2018 - Jan 2023 • 4 yrs 5 mos",
+        work_consulate_desc: `Honorary Consulate of the Federal Republic of Germany in Lviv.
+• IT Consultant: provided support for users.
+• Configured Windows 10/11, O365, Enterprise Security.
+• VM Ware ESXi, Firewall, IDS/IPS management.
+• Skills: Network Security, TCP/IP, Git, CentOS.`,
+
+        // Pavlenko & Partners
+        work_pavlenko_role: "Network and System Administrator",
+        work_pavlenko_date: "Jun 2012 - Jun 2017 • 5 yrs 1 mo",
+        work_pavlenko_desc: `Experienced Full-Stack Support Specialist (Pavlenko & Partners).
+• Managed client/server OS (Windows Server 2003/2008 R2, macOS).
+• Network Administration: Mikrotik (RouterOS), Cisco Meraki (SD-WAN, wireless).
+• Network Optimization (QoS) and Security (IDS/IPS).
+• Deployed VDI and Remote Desktop Services (RDS).
+• Administered Symantec Endpoint Security and SPAMHAUSE anti-spam solutions.
+• Managed Active Directory, DHCP, Print Servers.
+• Automation: PowerShell scripting, Group Policy Objects (GPO).
+• Malware remediation using Linux-based tools (USB/PXE).`,
         awards_recognition: "Recognition",
         btn_view_pdf: "View PDF",
 
