@@ -57,7 +57,7 @@ const translations = {
         work_improved: "Покращені навички:",
 
         // Netskrt
-        work_netskrt_role: "LiveOps Engineer",
+        work_netskrt_role: "LiveOps & Linux Administrator",
         work_netskrt_date: "Травень 2025 - Вересень 2025 • 5 міс",
         work_netskrt_desc: `<ul style="margin-top: 1rem; padding-left: 1.2rem;">
 <li>Встановлення та налаштування RAID на серверах Linux, усунення технічних несправностей.</li>
@@ -255,7 +255,7 @@ const translations = {
         work_improved: "Improved skills:",
 
         // Netskrt
-        work_netskrt_role: "LiveOps Engineer",
+        work_netskrt_role: "LiveOps & Linux Administrator",
         work_netskrt_date: "May 2025 - Sep 2025 • 5 mos",
         work_netskrt_desc: `<ul style="margin-top: 1rem; padding-left: 1.2rem;">
 <li>Installed and configured RAID on Linux servers, troubleshooting and resolving technical issues.</li>
