@@ -173,7 +173,7 @@ function setLanguage(lang, save = true) {
         const key = el.dataset.i18n;
         const translation = window.translations[lang][key];
         if (translation) {
-            el.textContent = translation;
+            el.innerHTML = translation;
         }
     });
 

@@ -59,15 +59,17 @@ const translations = {
         // Netskrt
         work_netskrt_role: "LiveOps Engineer",
         work_netskrt_date: "Травень 2025 - Вересень 2025 • 5 міс",
-        work_netskrt_desc: `Встановлення та налаштування RAID на серверах Linux, усунення технічних несправностей.
-• Забезпечення конфігурацій Linux за допомогою Ansible.
-• Налаштування фаєрволу UFW, оновлення системи та оптимізація продуктивності ('tuned').
-• Впровадження моніторингу цілісності файлів (inotify).
-• Моніторинг серверів Linux та CDN для забезпечення плавної відеострімінгу (Prometheus, Grafana, Zabbix).
-• Оптимізація доставки контенту через CDN, зменшення затримок.
-• Робота з Jira, JQL, CQL для документації.
-• Налаштування та дебаг мережі (curl, TCPDUMP), підтримка NetBox та DNS.
-• Встановлення та налаштування Kubernetes.`,
+        work_netskrt_desc: `<ul style="margin-top: 1rem; padding-left: 1.2rem;">
+<li>Встановлення та налаштування RAID на серверах Linux, усунення технічних несправностей.</li>
+<li>Забезпечення конфігурацій Linux за допомогою Ansible.</li>
+<li>Налаштування фаєрволу UFW, оновлення системи та оптимізація продуктивності ('tuned').</li>
+<li>Впровадження моніторингу цілісності файлів (inotify).</li>
+<li>Моніторинг серверів Linux та CDN для забезпечення плавної відеострімінгу (Prometheus, Grafana, Zabbix).</li>
+<li>Оптимізація доставки контенту через CDN, зменшення затримок.</li>
+<li>Робота з Jira, JQL, CQL для документації.</li>
+<li>Налаштування та дебаг мережі (curl, TCPDUMP), підтримка NetBox та DNS.</li>
+<li>Встановлення та налаштування Kubernetes.</li>
+</ul>`,
 
         // mThreat
         work_mthreat_role: "Cyber Security Research Engineer (Internship)",
@@ -255,15 +257,17 @@ const translations = {
         // Netskrt
         work_netskrt_role: "LiveOps Engineer",
         work_netskrt_date: "May 2025 - Sep 2025 • 5 mos",
-        work_netskrt_desc: `Installed and configured RAID on Linux servers, troubleshooting technical issues.
-• Provisioned Linux configurations using Ansible.
-• Configured UFW firewall, applied system updates, tuned system using 'tuned'.
-• Implemented file integrity monitoring (inotify).
-• Monitored Linux servers and CDN performance (Prometheus, Grafana, Zabbix).
-• Optimized content delivery via CDN, reducing latency.
-• Worked with Jira, JQL, CQL for documentation.
-• Configured/debugged networks (curl, TCPDUMP), maintained NetBox and DNS.
-• Installed and configured Kubernetes.`,
+        work_netskrt_desc: `<ul style="margin-top: 1rem; padding-left: 1.2rem;">
+<li>Installed and configured RAID on Linux servers, troubleshooting and resolving technical issues.</li>
+<li>Provisioned Linux configurations using Ansible.</li>
+<li>Configured UFW firewall, applied system updates, and tuned the system using the 'tuned' utility to enhance performance and security.</li>
+<li>Planned and evaluated a file integrity monitoring solution with an inotify-based tool to strengthen system security.</li>
+<li>Monitored Linux servers and CDN performance to ensure smooth video streaming, using Prometheus, Grafana, and Zabbix.</li>
+<li>Optimized content delivery via CDN, improving video streaming performance and reducing latency.</li>
+<li>Worked with Jira, JQL, and CQL to create and update documentation.</li>
+<li>Configured and debugged networks using curl and TCPDUMP; maintained NetBox and supported DNS services.</li>
+<li>Installed and configured Kubernetes; basic knowledge of Kubernetes concepts.</li>
+</ul>`,
 
         // mThreat
         work_mthreat_role: "Cyber Security Research Engineer (Internship)",
