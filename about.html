@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="uk">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
+    <meta name="description" content="About Levko Kravchuk - System Administrator and DevOps Engineer">
+    <meta name="theme-color" content="#0a0a1a">
+
+    <!-- Security Headers -->
+    <meta http-equiv="X-Content-Type-Options" content="nosniff">
+    <meta http-equiv="X-Frame-Options" content="SAMEORIGIN">
+    <meta name="referrer" content="strict-origin-when-cross-origin">
+    <meta http-equiv="Content-Security-Policy"
+        content="default-src 'self'; script-src 'self' 'unsafe-inline'; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com https://cdnjs.cloudflare.com; font-src 'self' https://fonts.gstatic.com https://cdnjs.cloudflare.com; img-src 'self' data: https:; frame-ancestors 'self'; form-action 'self'; base-uri 'self';">
+    <title>Про мене | Levko Kravchuk</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Outfit:wght@600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <!-- Navigation -->
+    <nav class="nav">
+        <div class="nav-container">
+            <a href="index.html" class="nav-logo">LK</a>
+            <ul class="nav-menu">
+                <li><a href="index.html" class="nav-link" data-i18n="nav_home">Головна</a></li>
+                <li><a href="about.html" class="nav-link active" data-i18n="nav_about">Про мене</a></li>
+                <li><a href="work-history.html" class="nav-link" data-i18n="nav_work">Робота</a></li>
+                <li><a href="awards.html" class="nav-link" data-i18n="nav_awards">Сертифікати</a></li>
+                <li><a href="violinist.html" class="nav-link" data-i18n="nav_violinist">Скрипаль</a></li>
+                <li><a href="projects.html" class="nav-link" data-i18n="nav_projects">Проєкти</a></li>
+                <li><a href="volunteer.html" class="nav-link" data-i18n="nav_volunteer">Волонтерство</a></li>
+            </ul>
+            <div class="nav-right">
+                <div class="lang-switcher">
+                    <button class="lang-btn active" data-lang="uk">UA</button>
+                    <button class="lang-btn" data-lang="en">EN</button>
+                </div>
+                <div class="nav-toggle">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <header class="page-header">
+        <div class="container">
+            <h1 data-i18n="about_title">Про мене</h1>
+            <p style="font-size: 1.2rem; color: var(--text-secondary);" data-i18n="about_subtitle">
+                System/Network Administrator | DevOps | Cyber Security Engineer
+            </p>
+        </div>
+    </header>
+
+    <!-- Page Content -->
+    <main class="page-content">
+        <div class="container">
+
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 2rem;">
+
+                <!-- Bio Card -->
+                <div class="glass-card">
+                    <h3 style="margin-bottom: 1rem;"><i class="fas fa-user"
+                            style="color: var(--neon-cyan); margin-right: 0.5rem;"></i> <span
+                            data-i18n="bio_title">Біографія</span></h3>
+                    <p data-i18n="bio_text_1">
+                        Досвідчений IT-спеціаліст з понад 15 роками досвіду в мережевому адмініструванні,
+                        системах безпеки та DevOps практиках. Народився в Україні, зараз проживаю та працюю
+                        у Vancouver, BC, Canada.
+                    </p>
+                    <p data-i18n="bio_text_2">
+                        Спеціалізуюсь на Linux системах, мережевій інфраструктурі, автоматизації та
+                        моніторингу. Завжди готовий вчитися новому та ділитися знаннями зі спільнотою.
+                    </p>
+                </div>
+
+                <!-- Contact Card -->
+                <div class="glass-card">
+                    <h3 style="margin-bottom: 1rem;"><i class="fas fa-address-card"
+                            style="color: var(--neon-cyan); margin-right: 0.5rem;"></i> <span
+                            data-i18n="contacts_title">Контакти</span></h3>
+                    <ul class="contact-list">
+                        <li class="contact-item">
+                            <span class="contact-icon"><i class="fas fa-map-marker-alt"></i></span>
+                            <span>Vancouver, British Columbia, Canada</span>
+                        </li>
+                        <li class="contact-item">
+                            <span class="contact-icon"><i class="fas fa-envelope"></i></span>
+                            <a href="mailto:levko.kravchuk@outlook.com">levko.kravchuk@outlook.com</a>
+                        </li>
+                        <li class="contact-item">
+                            <span class="contact-icon"><i class="fab fa-linkedin"></i></span>
+                            <a href="https://www.linkedin.com/in/levko-kravchuk/" target="_blank">LinkedIn Profile</a>
+                        </li>
+                        <li class="contact-item">
+                            <span class="contact-icon"><i class="fab fa-github"></i></span>
+                            <a href="https://github.com/LEO2008k" target="_blank">GitHub Profile</a>
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
+
+            <!-- Technical Skills Section -->
+            <section class="section">
+                <h2 class="section-title" data-i18n="skills_title">Технічні навички</h2>
+
+                <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 1.5rem;">
+
+                    <div class="glass-card">
+                        <h4 style="color: var(--neon-cyan); margin-bottom: 1rem;">
+                            <i class="fas fa-code" style="margin-right: 0.5rem;"></i> <span
+                                data-i18n="skills_programming">Мови програмування</span>
+                        </h4>
+                        <div class="skills-list">
+                            <span class="skill-tag">Bash</span>
+                            <span class="skill-tag">Python</span>
+                            <span class="skill-tag">SQL</span>
+                            <span class="skill-tag">C</span>
+                        </div>
+                    </div>
+
+                    <div class="glass-card">
+                        <h4 style="color: var(--neon-cyan); margin-bottom: 1rem;">
+                            <i class="fas fa-network-wired" style="margin-right: 0.5rem;"></i> <span
+                                data-i18n="skills_network">Мережеві технології</span>
+                        </h4>
+                        <div class="skills-list">
+                            <span class="skill-tag">VLAN</span>
+                            <span class="skill-tag">802.1Q</span>
+                            <span class="skill-tag">STP/RSTP</span>
+                            <span class="skill-tag">LACP</span>
+                            <span class="skill-tag">DHCP</span>
+                            <span class="skill-tag">DHCPv6</span>
+                            <span class="skill-tag">IPv6</span>
+                            <span class="skill-tag">DNS</span>
+                            <span class="skill-tag">VPN</span>
+                        </div>
+                    </div>
+
+                    <div class="glass-card">
+                        <h4 style="color: var(--neon-cyan); margin-bottom: 1rem;">
+                            <i class="fas fa-shield-alt" style="margin-right: 0.5rem;"></i> <span
+                                data-i18n="skills_security">Безпека</span>
+                        </h4>
+                        <div class="skills-list">
+                            <span class="skill-tag">ACL</span>
+                            <span class="skill-tag">Firewall</span>
+                            <span class="skill-tag">IDS/IPS</span>
+                            <span class="skill-tag">VPN</span>
+                            <span class="skill-tag">Tenable.sc</span>
+                            <span class="skill-tag">Nessus</span>
+                        </div>
+                    </div>
+
+                    <div class="glass-card">
+                        <h4 style="color: var(--neon-cyan); margin-bottom: 1rem;">
+                            <i class="fab fa-linux" style="margin-right: 0.5rem;"></i> <span
+                                data-i18n="skills_os">Операційні системи</span>
+                        </h4>
+                        <div class="skills-list">
+                            <span class="skill-tag">CentOS</span>
+                            <span class="skill-tag">RHEL</span>
+                            <span class="skill-tag">Ubuntu</span>
+                            <span class="skill-tag">FreeBSD</span>
+                            <span class="skill-tag">Windows Server</span>
+                            <span class="skill-tag">macOS</span>
+                            <span class="skill-tag">SELinux</span>
+                            <span class="skill-tag">ACL</span>
+                        </div>
+                    </div>
+
+                    <div class="glass-card">
+                        <h4 style="color: var(--neon-cyan); margin-bottom: 1rem;">
+                            <i class="fas fa-cogs" style="margin-right: 0.5rem;"></i> <span
+                                data-i18n="skills_devops">DevOps інструменти</span>
+                        </h4>
+                        <div class="skills-list">
+                            <span class="skill-tag">Docker</span>
+                            <span class="skill-tag">Ansible</span>
+                            <span class="skill-tag">Jenkins</span>
+                            <span class="skill-tag">Git</span>
+                            <span class="skill-tag">Grafana</span>
+                            <span class="skill-tag">Zabbix</span>
+                            <span class="skill-tag">Nagios</span>
+                            <span class="skill-tag">Nginx</span>
+                            <span class="skill-tag">Apache</span>
+                            <span class="skill-tag">OpenShift</span>
+                        </div>
+                    </div>
+
+                    <div class="glass-card">
+                        <h4 style="color: var(--neon-cyan); margin-bottom: 1rem;">
+                            <i class="fas fa-database" style="margin-right: 0.5rem;"></i> <span
+                                data-i18n="skills_database">Бази даних та Інше</span>
+                        </h4>
+                        <div class="skills-list">
+                            <span class="skill-tag">MySQL</span>
+                            <span class="skill-tag">MariaDB</span>
+                            <span class="skill-tag">SQLite</span>
+                            <span class="skill-tag">Ha Proxy</span>
+                            <span class="skill-tag">Galera Cluster</span>
+                            <span class="skill-tag">JIRA</span>
+                        </div>
+                    </div>
+
+                </div>
+            </section>
+
+            <!-- Download CV -->
+            <div style="text-align: center; margin-top: 3rem;">
+                <a href="Levko_Kravchuk_Resume.pdf" download class="btn">
+                    <i class="fas fa-download"></i> <span data-i18n="btn_download_resume">Завантажити моє резюме</span>
+                </a>
+            </div>
+
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p class="footer-text">
+            © 2024-2026 <a href="https://www.linkedin.com/in/levko-kravchuk/" target="_blank">Levko Kravchuk</a>. <span
+                data-i18n="footer_rights">All rights reserved.</span>
+        </p>
+    </footer>
+
+    <button class="back-to-top" aria-label="Back to top">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <script src="js/particles.js"></script>
+    <script src="js/translations.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>
