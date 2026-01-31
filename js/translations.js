@@ -136,6 +136,20 @@ const translations = {
 • Адміністрування Active Directory, DHCP, Print Servers.
 • Автоматизація: PowerShell, GPO.
 • Відновлення систем після вірусних атак (Linux tools, USB/PXE boot).`,
+        // SoftServe University
+        work_softserve_uni_role: "SoftServe IT University",
+        work_softserve_uni_date: "Вересень 2017 - Грудень 2017 • 4 міс",
+        work_softserve_uni_desc: `Навчання та практика.
+• Технології: MariaDB, Ha Proxy, Locust, AWS EC2, Autoscaling, Docker, Tomcat, Git, Ansible, Eucalyptus, Bash.`,
+
+        // OurLan
+        work_ourlan_role: "System/Network Administrator",
+        work_ourlan_date: "Червень 2008 - Березень 2015 • 6 років 10 міс",
+        work_ourlan_desc: `Власний бізнес (OurLan).
+• Встановлення та обслуговування ISP LAN/WAN мереж.
+• Управління smart-світчами, роутерами, білінгом.
+• Робота з оптикою (Single & Multi-Mode Fiber), SCS, UTP/STP Cat 5/6.
+• Обслуговування Data Center (Tier III), TCP/IP.`,
         awards_network: "Мережеві сертифікати",
         awards_security: "Кібербезпека",
         awards_education: "Освіта та навчання",
