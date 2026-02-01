@@ -59,7 +59,7 @@ const translations = {
 
                 // Education Page
                 education_title: "Освіта та Навчання",
-                education_subtitle: "Академічна освіта та професійні курси",
+                education_subtitle: "Освітній шлях та професійні курси",
 
                 // Netskrt
                 work_netskrt_role: "LiveOps & Linux Administrator",
