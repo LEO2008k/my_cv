@@ -206,6 +206,9 @@ a:hover {
   border-radius: 8px;
   transition: var(--transition-normal);
   position: relative;
+  min-width: 85px;
+  text-align: center;
+  white-space: nowrap;
 }
 
 .nav-link::after {
