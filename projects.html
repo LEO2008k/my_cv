@@ -4,14 +4,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
-    <meta name="description" content="Levko Kravchuk Home Projects - personal tech experiments">
+    <meta name="description" content="Levko Kravchuk Projects - Public and Home Lab experiments">
     <meta name="theme-color" content="#0a0a1a">
-  
-  <!-- Security Headers -->
-  <meta http-equiv="X-Content-Type-Options" content="nosniff">
-  <meta http-equiv="X-Frame-Options" content="SAMEORIGIN">
-  <meta name="referrer" content="strict-origin-when-cross-origin">
-  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline'; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com https://cdnjs.cloudflare.com; font-src 'self' https://fonts.gstatic.com https://cdnjs.cloudflare.com; img-src 'self' data: https:; frame-ancestors 'self'; form-action 'self'; base-uri 'self';">
+
+    <!-- Security Headers -->
+    <meta http-equiv="X-Content-Type-Options" content="nosniff">
+    <meta http-equiv="X-Frame-Options" content="SAMEORIGIN">
+    <meta name="referrer" content="strict-origin-when-cross-origin">
+    <meta http-equiv="Content-Security-Policy"
+        content="default-src 'self'; script-src 'self' 'unsafe-inline'; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com https://cdnjs.cloudflare.com; font-src 'self' https://fonts.gstatic.com https://cdnjs.cloudflare.com; img-src 'self' data: https:; frame-ancestors 'self'; form-action 'self'; base-uri 'self';">
     <title>Проєкти | Levko Kravchuk</title>
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -39,8 +40,8 @@
             </ul>
             <div class="nav-right">
                 <div class="lang-switcher">
-                    <button class="lang-btn active" data-lang="uk">UA</button>
-                    <button class="lang-btn" data-lang="en">EN</button>
+                    <button class="lang-btn active" data-lang="en">EN</button>
+                    <button class="lang-btn" data-lang="uk">UA</button>
                 </div>
                 <div class="nav-toggle">
                     <span></span>
@@ -54,9 +55,9 @@
     <!-- Page Header -->
     <header class="page-header">
         <div class="container">
-            <h1>🛠️ <span data-i18n="projects_title">Домашні проєкти</span></h1>
+            <h1 data-i18n="projects_title">Projects</h1>
             <p style="font-size: 1.2rem; color: var(--text-secondary);" data-i18n="projects_subtitle">
-                Особисті технічні проєкти та експерименти
+                Public Projects & Home Lab Experiments
             </p>
         </div>
     </header>
@@ -65,55 +66,106 @@
     <main class="page-content">
         <div class="container">
 
-            <div class="placeholder-content">
-                <div class="glass-card" style="max-width: 700px; margin: 0 auto;">
-                    <div class="icon">🚀</div>
-                    <h2 style="color: var(--neon-magenta); margin-bottom: 1.5rem;" data-i18n="coming_soon">Скоро буде...
+            <!-- Public Projects Section -->
+            <section style="margin-bottom: 4rem;">
+                <div style="display: flex; align-items: center; gap: 1rem; margin-bottom: 2rem;">
+                    <h2 style="font-family: 'Orbitron', sans-serif; color: var(--neon-cyan); font-size: 2rem;">
+                        <i class="fas fa-globe-americas" style="margin-right: 0.5rem;"></i>
+                        Public Projects
                     </h2>
-                    <p style="font-size: 1.1rem; margin-bottom: 1.5rem;" data-i18n="projects_desc">
-                        Ця сторінка буде містити мої персональні технічні проєкти та home lab експерименти.
-                    </p>
+                </div>
 
-                    <div style="margin-top: 2rem; padding-top: 2rem; border-top: 1px solid var(--glass-border);">
-                        <h4 style="color: var(--neon-cyan); margin-bottom: 1rem;" data-i18n="projects_categories">
-                            Категорії проєктів:</h4>
-                        <ul style="text-align: left; color: var(--text-secondary); list-style: none;">
-                            <li style="margin-bottom: 0.5rem;">
+                <div class="timeline">
+                    <!-- 3DentalAI -->
+                    <div class="timeline-item">
+                        <span class="timeline-date">Sep 2024 - Present</span>
+                        <div class="glass-card">
+                            <div style="display: flex; align-items: center; gap: 1rem; margin-bottom: 0.5rem;">
+                                <div
+                                    style="width: 40px; height: 40px; background: rgba(255,255,255,0.1); border-radius: 8px; display: flex; align-items: center; justify-content: center;">
+                                    <i class="fas fa-tooth" style="color: var(--neon-cyan);"></i>
+                                </div>
+                                <h3 class="timeline-title">3DentalAI for Google hackathon (Vancouver, Canada) 🇨🇦</h3>
+                            </div>
+                            <!-- <div class="timeline-company">Google Hackathon Project</div> -->
+
+                            <p style="margin-top: 1rem; color: var(--text-secondary); line-height: 1.6;">
+                                I'm thrilled to announce that I've started working as a developer on our 3D Dental
+                                project at the Google Hackathon—an innovative, AI-driven solution for diagnosing teeth
+                                with 3D visualisation.
+                            </p>
+
+                            <div class="skills-list" style="margin-top: 1.5rem;">
+                                <span class="skill-tag">Artificial Intelligence (AI)</span>
+                                <span class="skill-tag">API</span>
+                                <span class="skill-tag">Postman API</span>
+                                <span class="skill-tag">API Testing</span>
+                                <span class="skill-tag">REST APIs</span>
+                                <span class="skill-tag">Shell Scripting</span>
+                                <span class="skill-tag">python scripting</span>
+                                <span class="skill-tag">Node.js</span>
+                                <span class="skill-tag">3D photo</span>
+                                <span class="skill-tag">Jenkins</span>
+                                <span class="skill-tag">Pipelines</span>
+                                <span class="skill-tag">Web Development</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+
+            <!-- Home Projects Section -->
+            <section>
+                <div style="display: flex; align-items: center; gap: 1rem; margin-bottom: 2rem;">
+                    <h2 style="font-family: 'Orbitron', sans-serif; color: var(--neon-magenta); font-size: 2rem;">
+                        <i class="fas fa-tools" style="margin-right: 0.5rem;"></i>
+                        Home Projects
+                    </h2>
+                </div>
+
+                <p style="color: var(--text-secondary); margin-bottom: 2rem; font-size: 1.1rem;">
+                    Personal tech projects and experiments.
+                </p>
+
+                <div class="glass-card" style="text-align: center; padding: 3rem;">
+                    <div class="icon" style="font-size: 3rem; margin-bottom: 1rem;">🧪</div>
+                    <h3 style="margin-bottom: 1rem;">Experiments in Progress</h3>
+
+                    <div style="margin-top: 2rem; border-top: 1px solid var(--glass-border); padding-top: 2rem;">
+                        <ul
+                            style="text-align: left; color: var(--text-secondary); list-style: none; display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 1rem;">
+                            <li>
                                 <i class="fas fa-server" style="color: var(--neon-cyan); margin-right: 0.5rem;"></i>
                                 Home Lab Infrastructure
                             </li>
-                            <li style="margin-bottom: 0.5rem;">
+                            <li>
                                 <i class="fab fa-raspberry-pi"
                                     style="color: var(--neon-cyan); margin-right: 0.5rem;"></i>
                                 Raspberry Pi
                             </li>
-                            <li style="margin-bottom: 0.5rem;">
+                            <li>
                                 <i class="fab fa-docker" style="color: var(--neon-cyan); margin-right: 0.5rem;"></i>
                                 Docker
                             </li>
-                            <li style="margin-bottom: 0.5rem;">
+                            <li>
                                 <i class="fas fa-robot" style="color: var(--neon-cyan); margin-right: 0.5rem;"></i>
                                 Automation
                             </li>
-                            <li style="margin-bottom: 0.5rem;">
+                            <li>
                                 <i class="fas fa-network-wired"
                                     style="color: var(--neon-cyan); margin-right: 0.5rem;"></i>
                                 Networking
                             </li>
-                            <li style="margin-bottom: 0.5rem;">
+                            <li>
                                 <i class="fab fa-github" style="color: var(--neon-cyan); margin-right: 0.5rem;"></i>
                                 Open Source
                             </li>
                         </ul>
                     </div>
-
-                    <div style="margin-top: 2rem;">
-                        <a href="https://github.com/LEO2008k" target="_blank" class="btn">
-                            <i class="fab fa-github"></i> <span data-i18n="btn_view_github">Переглянути на GitHub</span>
-                        </a>
-                    </div>
                 </div>
-            </div>
+
+            </section>
 
         </div>
     </main>
