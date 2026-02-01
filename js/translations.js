@@ -262,7 +262,7 @@ const translations = {
 
                 // Education Page
                 education_title: "Education & Training",
-                education_subtitle: "Academic Background & Professional Courses",
+                education_subtitle: "Learning Background & Professional Courses",
 
                 // Netskrt
                 work_netskrt_role: "LiveOps & Linux Administrator",
