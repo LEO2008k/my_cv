@@ -125,13 +125,13 @@ document.addEventListener('DOMContentLoaded', () => {
 
 function initLanguage() {
     // Use safe storage with fallback
-    const savedLang = safeStorage.get('lang') || 'uk';
+    const savedLang = safeStorage.get('lang') || 'en';
 
     // Validate before applying
     if (isValidLanguage(savedLang)) {
         setLanguage(savedLang, false);
     } else {
-        setLanguage('uk', false);
+        setLanguage('en', false);
     }
 
     // Set up language switcher buttons
