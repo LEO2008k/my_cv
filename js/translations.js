@@ -374,7 +374,7 @@ Improved skills: Linux, Monitoring tools (Grafana, Nagios), scripting, Load Bala
 
                 // Volunteer Page
                 volunteer_title: "Volunteering in BC",
-                volunteer_subtitle: "Participation in the British Columbia tech community",
+                volunteer_subtitle: "Participation in the British Columbia tech communities",
                 volunteer_bsides_desc: "BSides Vancouver is a non-profit cybersecurity conference that brings together professionals, researchers and security enthusiasts.",
                 volunteer_bsides_role: "As a volunteer, I helped organize the event and ensure a comfortable atmosphere for all participants.",
                 volunteer_vanlug_desc: "Active member of the Linux user community in Vancouver. VanLUG brings together Linux and open source technology enthusiasts.",
