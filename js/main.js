@@ -18,6 +18,76 @@ function sanitizeHTML(str) {
 }
 
 /**
+ * Sanitize HTML content allowing only safe tags
+ * Used for translations that contain formatting
+ * @param {string} html - HTML string
+ * @returns {string} - Sanitized HTML
+ */
+function sanitizeTranslation(html) {
+    if (typeof html !== 'string') return '';
+
+    // Allowed tags for translations
+    const allowedTags = ['ul', 'li', 'p', 'br', 'strong', 'em', 'span', 'a'];
+    const allowedAttributes = {
+        'a': ['href', 'target', 'rel'],
+        'span': ['style'],
+        'p': ['style'],
+        'ul': ['style'],
+        'li': []
+    };
+
+    const div = document.createElement('div');
+    div.innerHTML = html;
+
+    // Remove script tags and event handlers
+    const scripts = div.querySelectorAll('script');
+    scripts.forEach(script => script.remove());
+
+    // Remove dangerous attributes
+    const allElements = div.querySelectorAll('*');
+    allElements.forEach(el => {
+        const tagName = el.tagName.toLowerCase();
+
+        // Remove disallowed tags
+        if (!allowedTags.includes(tagName)) {
+            el.replaceWith(...el.childNodes);
+            return;
+        }
+
+        // Remove dangerous attributes
+        const attrs = Array.from(el.attributes);
+        attrs.forEach(attr => {
+            const attrName = attr.name.toLowerCase();
+
+            // Remove event handlers (onclick, onerror, etc)
+            if (attrName.startsWith('on')) {
+                el.removeAttribute(attr.name);
+                return;
+            }
+
+            // Remove javascript: protocol
+            if (attr.value && attr.value.toLowerCase().includes('javascript:')) {
+                el.removeAttribute(attr.name);
+                return;
+            }
+
+            // Check if attribute is allowed for this tag
+            const allowed = allowedAttributes[tagName] || [];
+            if (!allowed.includes(attrName)) {
+                el.removeAttribute(attr.name);
+            }
+        });
+
+        // Add rel="noopener noreferrer" to external links
+        if (tagName === 'a' && el.hasAttribute('target')) {
+            el.setAttribute('rel', 'noopener noreferrer');
+        }
+    });
+
+    return div.innerHTML;
+}
+
+/**
  * Validate language code
  * @param {string} lang - Language code
  * @returns {boolean} - Is valid
@@ -173,7 +243,8 @@ function setLanguage(lang, save = true) {
         const key = el.dataset.i18n;
         const translation = window.translations[lang][key];
         if (translation) {
-            el.innerHTML = translation;
+            // Use sanitized translation to prevent XSS while allowing safe HTML
+            el.innerHTML = sanitizeTranslation(translation);
         }
     });
 
