@@ -1,0 +1,563 @@
+% Preamble
+% Compile with XeLaTeX
+
+\documentclass[11pt,oneside,a4paper,titlepage,pdfusetitle]{article}
+\usepackage{preamble}
+\usepackage{adjustbox}
+\usepackage{lipsum}
+\usepackage{fontawesome}
+\usepackage{academicons}
+\usepackage{enumitem}
+\usepackage{hyperref} % Add hyperref package
+\usepackage{animate}
+
+
+\hypersetup{
+    pdftitle={Levko Kravchuk Resume},
+    pdfauthor={Levko Kravchuk},
+    pdfsubject={Curriculum Vitae},
+    pdfkeywords={Linux Administrator, System Administrator, Network Administrator, Firewall, RHEL, Windows Administrator, Tier 2, Tier2 Support Engineer, SLA,SLI,SLO, DevOps, GIT, SDLC, CI/CD, Automation, Ansible, Docker, Podman, Cyber Security Engineer, Bug Hunter, BASH and Python scripting, Cyber Security, AI, AI prompt engineer, Vibe Coding},
+    pdfproducer={XeLaTeX},
+    pdfcreator={XeLaTeX},
+}
+
+\graphicspath{{PIC/}}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{document}
+
+\sidebar{sideBarColor!25}
+\simpleheader{titleBackColor}{Levko}{Kravchuk}{Cyber Security Engineer, System/Network Administrator by DevOps philosophy}{white}
+
+% Start Minipages
+\vspace*{3.49cm}% start 8 cm from the top of the page}
+    \adjustbox{valign=t}{\begin{minipage}{7.3cm} % large 7.4 cm from the top
+    \vspace*{1.2cm} % text starts 1cm under the top of the minipage
+            
+%        % Picture
+%        \begin{center}
+%        \begin{tikzpicture}
+%            \node[
+%            circle,
+%            minimum size=\cvPictureWidth,
+%            path picture={
+%            \node at (path picture bounding box.center){
+%             \includegraphics[width=\cvPictureWidth]{Picture.jpg}
+%             };
+%             }]
+%            {};
+%        \end{tikzpicture}
+%        \end{center}
+
+        %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+        % Profile section
+
+        
+        %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%        \adjustbox{valign=t}{%
+%        \begin{minipage}{7.3cm} 
+%        \vspace*{0.4cm} % text starts 0.4cm under the top the header
+       %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+        % Professional Skills 
+                % QR Code
+        \begin{center}
+            \includegraphics[width=3.5cm]{QR_Info.png}
+        \end{center} 
+
+                % Contact Section
+        \ruleline{\textbf{Contact}}
+        \begin{tikzpicture}[every node/.style={inner sep=0pt, outer sep=0pt}]
+        \matrix [
+        column 1/.style={anchor=center,contactIcon},
+        column 2/.style={anchor=west,align=left,contactIcon},
+        column sep=5pt,
+        row sep=5pt] (contact) {
+        \node{\faEnvelopeO};
+         & \node{\href{mailto:levko.kravchuk@outlook.com}{levko.kravchuk@outlook.com}};\\
+         \node{\faMale}; 
+         & \node{\href{https://levko.kravchuk.net.ua}{https://levko.kravchuk.net.ua}};\\
+        \node{\faPhone}; 
+         & \node{+1 778 987 5773};\\ 
+        \node{\faMapMarker}; 
+        & \node{Greater Vancouver \\ BC, Canada};\\
+        \node{\faLinkedinSquare}; 
+        & \node{\href{https://www.linkedin.com/in/levko-kravchuk/}{Levko Kravchuk}};\\
+        & \node{\href{https://www.github.com/leo2008k}{Levko's GitHub}};\\
+         };
+
+        \end{tikzpicture}  
+
+         %%%%% PROF SKILLS %%%%%
+        
+        \ruleline{\textbf{Professional Skills}}
+        \begin{center}
+        \cvtag{Cyber Security Engineer}\cvtag{Linux}\cvtag{Windows Servers}\cvtag{Network}\cvtag{Network Security}\cvtag{CI/CD}\cvtag{O365}\cvtag{Wi-Fi 
+        Enterprise}\cvtag{Automation} \cvtag{Vulnerability Analyst} 
+
+        \cvtag {\animateinline[loop, autoplay]{0.2} % 0.2 FPS -> зміна кожні 5 секунд
+        {\textcolor{black}{For a complete work history, please visit my LinkedIn}}
+        \newframe
+        {\textcolor{blue}{For a complete work history, please visit my LinkedIn}} 
+        \newframe
+        {\textcolor{red}{For a complete work history, please visit my LinkedIn}} 
+        
+
+        \endanimateinline}
+
+        \end{center}
+
+        
+        %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Soft Skills Section
+        \ruleline{\textbf{Soft Skills and Strengths}}
+        \vspace*{-0.5cm}
+        \begin{center}
+        \cvtag{Creativity}\cvtag{Curiosity}\cvtag{Flexibility}\cvtag{Self Confidence}\cvtag{Ability to Plan and Organize} \cvtag{Autonomy}\cvtag{Adaptability} \cvtag{Eye for Details}\cvtag{Problem Solving}\cvtag{Team Working}\cvtag{Love Learning New Things}\cvtag{Leadership}\cvtag{Good Communication}\cvtag{Managing Information}\cvtag{Diplomacy}\cvtag{Good Listener}\cvtag{Patience}
+        \end{center}
+
+
+
+        
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+        
+    \end{minipage}} %
+    \hfill 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%% MAIN SECTION %%%%%%%%%%%%%%%%%%%%
+    \adjustbox{valign=t}{\begin{minipage}{11.3cm}
+        \vspace*{1cm}
+    %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+    % Information Technology Skills
+        \section*{{\faDesktop} Technical Summary}
+        
+        \ITCcompetence{Network \& Security}{
+        \textbf{Network protocols: Vlan, Ethernet, RSTP, EtherChanels (LACP), DHCP, DHCPv6, IPv6, DNS, SSH, SMTP, IMAP, POP3, DMVPN, VPN}: \textnormal{Highly Specialized}\\
+        \textbf{Tenable.sc, Nessus scanner, NetCat, Wireshark, Endpoint Security, OSPF}: \textnormal{Intermediate}\\
+        \textbf{Programming Languages: Python and Bash}: \textnormal{Intermediate}\\
+        }
+        
+        \vspace*{0.22cm}
+    
+        \ITCcompetence{DevOps \& Monitoring}{
+        \textbf{Docker, Ansible, Nginx, Apache, Tomcat, Grafana, Nagios, Jenkins, Gerrit, Puppet, Prometheus, ESXi.}: \textnormal{Intermediate }\\
+        \textbf{Nagios, Prometheus with Grafana, Observium}: \textnormal{Intermediate}\\
+        \textbf{Git, GitHub, Gerrit, GitLab}: \textnormal{Intermediate}\\
+        }
+    
+        \vspace*{0.22cm}
+    
+        \ITCcompetence{Operating Systems \& Other}{
+        \textbf{RedHat, CentOS Stream, Ubuntu/Debian, Rocky Linux}: \textnormal{Highly Specialized}\\
+        \textbf{MacOS, FreeBSD}: \textnormal{Intermediate}\\
+        \textbf{Clients Windows XP/7/8/8.1/10/11; Windows Server 2003/2008r2/2012/2016}: \textnormal{Intermediate}\\
+        \textbf{Jira, JQL, Confluence, RCA, ITIL,}: \textnormal{Intermediate}\\
+        }
+           
+        %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+        % Work Experience
+\section*{{\faSuitcase} WORK EXPERIENCE}
+%%%\\ is newline
+        
+\MySectionNoPic{May 2025 - Sep 2025}{LiveOps \& Linux Administrator at \underline{\href{https://www.netskrt.io/}{Netskrt}}}{\href{https://maps.app.goo.gl/B3GJgJtKtXohMbZL7}{Vancouver, BC, Canada}}{
+\\ \textnormal {• Installed and configured RAID on Linux servers, troubleshooting and resolving technical issues.}
+\\ \textnormal {• Provisioned Linux configurations using Ansible.}
+\\ \textnormal {• Configured UFW firewall, applied system updates, and tuned the system using the `tuned` utility to enhance performance and security.}
+\\ \textnormal {• Planned and evaluated a file integrity monitoring solution with an inotify-based tool to strengthen system security.}
+\\ \textnormal {• Monitored Linux servers and CDN performance to ensure smooth video streaming, using Prometheus, Grafana, and Zabbix.}
+\\ \textnormal {• Optimized content delivery via CDN, improving video streaming performance and reducing latency.}
+\\ \textnormal {• Worked with Jira, JQL, and CQL to create and update documentation.}
+\\ \textnormal {• Configured and debugged networks using curl and TCPDUMP; maintained NetBox and supported DNS services.}
+\\ \textnormal {• Installed and configured Kubernetes; basic knowledge of Kubernetes concepts.}}
+
+\vspace*{0.22cm}
+%%%% close Netskrt section
+ 
+\MySectionNoPic{Jan 2025 - March2025}{An internship role: Cyber Security Researcher at \underline{\href{https://www.mthreat.com/}{mThreat}}}{\href{https://www.google.com/maps/@49.2273991,-123.0001559,11.23z?authuser=0&entry=ttu}{Greater Vancouver, BC, Canada}}{
+\\ \textnormal {• Main duties: Investigated email headers, analyzed network anomalies, managed IP address reputation, block botnets.}
+\\ \textnormal {• Used Regex to ban botnets, added Regex to an anti-spam filter, and conducted WHOIS and DNS investigations.}}
+            
+\vspace*{0.22cm}
+          
+
+\end{minipage}} %
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%% The Second Page started here
+\newpage
+
+\sidebar{sideBarColor!25}
+\newpageheader{titleBackColor}{Levko}{Kravchuk}{Cyber Security Engineer \faLightbulbO \hspace{1mm} Linux Admin}{white}
+
+% %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% SIDEBAR %%%%%%%%%%%%%%%%%%%
+\adjustbox{valign=t}{%
+\begin{minipage}{7.3cm} 
+\vspace*{0.4cm} % text starts 0.4cm under the top the header
+
+    %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%     
+         %Certificates section
+    \section{Certificates}
+    \begin{itemize}[left=1pt]
+        \item \href{https://levko.kravchuk.net.ua/Cisco_Ethical_Hacking.png}{Cisco Ethical Hacker Course Completion} 
+        \vspace*{1.22cm}
+        \item \href{https://levko.kravchuk.net.ua/Certificate_of_Excellence_2024-Levko.png}{VanLUG Certificate of Excellence 2024}
+        \vspace*{1.22cm}
+        \item \href{https://levko.kravchuk.net.ua/BSides_2024_Volunteer_Certificate-Levko_Kravchuk.pdf}{\underline{Certificate}} of Volunteer at \href{https://www.bsidesvancouver.com/}{\underline{B|SIDES} 2024.} Cyber Security Conference. \href{https://levko.kravchuk.net.ua/VolunteerThankYouBSides2024-Levko_Kravchuk.png}{\underline {Click to review recommendation letter (20 volunteer hours)}}. % Note: Certificate PDF missing, Letter PNG added
+
+        \vspace*{1.22cm}
+        \item \href{https://levko.kravchuk.net.ua/Crim_Record_PASS.png}{Certificate of Criminal Record: CLEARED} % Note: This file is MISSING from the repository
+        \vspace{1.22cm}
+        \item \href{https://cs50.harvard.edu/certificates/d5cffcd9-a11d-4d5d-8785-6d7dcc92d244}{CS50's Introduction to Cybersecurity by Harvard University}
+        \vspace{1.22cm}
+        \item \href{https://levko.kravchuk.net.ua/VanLUG_Feb_2025.png}{Vancouver Linux User Group (VanLUG) Certificate about an Open Source Advocacy}
+        \vspace{1.22cm}
+        \item{Additional certificates: on my LinkedIn}
+
+    \end{itemize}
+
+
+%%%%%%%%%%%%%%
+
+    \section{Volunteer Experience}
+    \begin{itemize}[left=0pt]
+        \item {Oct 2025 - Present} {Duties: Exam/Certificate preparations}\href{https://engage.isaca.org/vancouverchapter/home }{ ISACA Vancouver Chapter}
+        \vspace*{0.22cm}
+        \item {Oct 2025} {Duties: Event support at BSides Victoria}\href{https://www.bsidesvi.com/ }{ BSides Vancouver Island}
+        \vspace*{0.22cm}
+        \item {May 2024} {Duties: Event support, Users support, and Workshops Attendee BSides Vancouver}\href{https://www.bsidesvancouver.com/}{ BSides Vancouver}
+        \vspace*{0.22cm}
+        \item {Jun 2023 - Jan 2024} {Duties: Event support at Google I/O Extended - Vancouver}
+        \vspace*{0.22cm}
+        \item {Jun 2023 - Apr 2024 } {Duties: Technical translator (Localization) Rocky Linux guides into Ukrainian language at Rocky Linux Community. Remote}
+        \vspace*{0.22cm}
+        
+    \end{itemize}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+    %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+        % Publications      
+\begin{comment}
+    
+      
+    \section*{Publications \& conference presentations}
+    \begin{itemize}[left=0pt]
+        \item \href{https://medium.com/@leo2008k/how-to-apply-full-bogon-martians-networks-list-to-mikrotik-46fbffa7b813}{How to apply full bogon “Martians networks” list to MIKROTIK}
+        \vspace*{0.22cm}
+
+        \item \href{https://medium.com/@leo2008k/wifi-ssid-unicode-name-f3aa96f7d77}{Cisco Meraki \& WiFi SSID Unicode name, Funny technical configuration}
+        \vspace*{0.22cm}
+
+        \item \href{https://www.youtube.com/watch?v=9IEymzIXNzo}{How wireless networks can be dangerous for Apple products with Flipper Zero at} (\href{https://mdoyvr2024.com}{\underline{MDOYVR2024 Conference}})
+
+        \item \href{https://medium.com/p/3840de96f71b}{Testing WiFi security by Flipper zero, debug by "Net Spot", and Cisco Meraki MX68W}
+        
+        \item \href{https://vanlug.ca/events/}{Vancouver Linux User Group (Van LUG). Please review the presentation slides and locate the event on March 9, 2024.}
+
+        \item \href{https://www.meetup.com/defcon604/events/298244055/}{DefCon(DC604) meetup and presentation about DNS, Passive DNS, and DNS tunnels at Cisco office}
+
+        \item \href{https://www.meetup.com/vanlug-bc/events/304671545/?_xtd=gqFyqTI0NTg4MjIzN6Fwo2FwaQ%253D%253D&from=ref}{How DHCP Works, Linux Boot Process, and How to Use Multiple Linux Distributions via Network}
+
+        
+\end{itemize}
+
+\end{comment}
+
+\end{minipage}
+}%
+\hfill
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% END of The MAIN Page %%%%%%%%%%%%%%%%%%%%%%%%%
+\adjustbox{valign=t}{%
+\begin{minipage}{11.3cm}
+\vspace*{0.4cm}
+%%%%%%%%%%%%%%%%%%%%%%%%% Second Page %%%%%%%%%%%%%%%%%%%%%%%%%
+
+\MySectionNoPic{Dec 2020 - Jun 2023}{DevOps \& System Administrator at  \underline{\href{https://www.tietoevry.com/}{TietoEvry}}}{\href{https://goo.gl/maps/v5Yxb4rANWpaD3jf8}{Lviv, Ukraine} }{
+\newline• \textnormal{Managed and maintained Linux servers and systems, including troubleshooting and resolving technical issues.}
+\newline• \textnormal{Configured and monitored network infrastructure, ensuring up-time and reliability.}
+\newline• \textnormal{Conducted regular maintenance and updates to optimize system performance and security.}
+\newline• \textnormal{Collaborated with cross-functional teams to develop and implement new technology solutions.}
+\newline• \textnormal{Provided technical support and training to team members on Linux systems and network operations.}
+\newline• \textnormal{Monitored the performance and availability of Tenable.sc and Nessus scanners and implemented measures to ensure their reliability.}
+\newline• \textnormal{Tech stack: Tenable.sc, Nessus scanner, Apache, SSL, Loki, Docker, Nagios, Python, Bash, API, LDAP.}
+\newline• \textnormal{Business improvement: I developed scripts and automation to enhance service and support for users.}} % Closed TietoEvry Work Section Bracket
+           
+\vspace*{0.22cm}
+
+%%%My new changes 
+\MySectionNoPic{Jul 2020 - Nov 2020}{Tier 1,2 Support Engineer \& System Administrator at \underline {\href{https://www.ait.com/}{Advanced Internet Technology (AIT)}}}{Lviv, Ukraine; (Fayetteville, NC, USA (remote))}{ 
+\newline• \textnormal {Maintained DNS servers and relative DNS records, debugged DNS, and troubleshoot customer requests.}
+\newline• \textnormal {Maintained and configured Cpanel(s), supported and deployed websites to Cpanel(s) via Gitlab.}
+\newline• \textnormal {Assisted with the implementation of good security practices. Automated provision VMs via ESXi. SSL\&TLS configuration with Installation.}}
+%{\lipsum[24]}  
+
+\vspace*{0.19cm}
+            
+
+\MySectionNoPic{Mar 2018 - Mar 2020}{DevOps Engineer at Tier 1 team at \underline {\href{https://www.softserveinc.com/en-us}{SoftServe}}}{Lviv, Ukraine}{ 
+\newline• \textnormal {Collaborated with developers and other Tier teams to troubleshoot and resolve issues related to the project.}
+\newline• \textnormal {Proficient with: Git and Jenkins to automate routine tasks. Utilized a load balancer for blue-green deployment.}
+\newline• \textnormal {Monitored the functioning and accessibility of systems and software and took actions to ensure that they remained dependable.}
+\newline• \textnormal {Utilized: Jira Query Language to investigate issues, provide RCA, and create new documents to prevent future problems. Adhering to ITIL rules is crucial for the business.}}
+
+\vspace*{0.19cm}
+
+
+\MySectionNoPic{Jun 2012 - Jun 2017}{Network \& System Administrator at  Attorneys at Law \underline {"Pavlenko \& Partners"}}{Lviv, Ukraine}{ 
+\newline• \textnormal {Installed and maintained SCS, LAN, Network, and Endpoint security.(Symantec Endpoint Security)}
+\newline• \textnormal {Full-stack support of clients OS: Windows XP/7/8/10, macOS. Servers OS: Windows 2008r2, AD, WSUS, GPO, Mikrotik, UTM, mail servers, Cisco Meraki SD-WAN, Wireless, QoS, Group Policy, IDS/IPS.}
+\newline• \textnormal {{Business improvement:} Implement best security practices and technologies, Deployed scripts for install user soft, auto-configure VPN.}}
+
+\vspace{0.19cm}
+
+
+\vspace*{0.2cm}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\end{minipage}} % for close to prevent error manually added by me
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Third Page sterted here
+
+%\leavevmode
+\newpage
+
+\sidebar{sideBarColor!25}
+\newpageheader{titleBackColor}{Levko}{Kravchuk}{System \& Network Administrator 3 \faLightbulbO \hspace{1mm} DevOps}{white}
+
+% %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% SIDEBAR %%%%%%%%%%%%%%%%%%%
+\adjustbox{valign=t}{%
+\begin{minipage}{7.3cm} 
+\vspace*{0.4cm} % text starts 0.4cm under the top the header
+
+    %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%     
+         %Certificates section
+\begin{comment}
+         
+    \section{Certificates}
+    \begin{itemize}[left=0pt]
+        \item \href{https://levko.kravchuk.net.ua/Ethical_Hacker_Badge_Cisco_Levko_Kravchuk.pdf}{Cisco Ethical Hacker Course Completion} 
+        \vspace*{0.22cm}
+        \item \href{https://levko.kravchuk.net.ua/Certificate_of_Excellence_2024-Levko.pdf}{VanLUG Certificate of Excellence 2024}
+        \vspace*{0.22cm}
+        \item \href{https://levko.kravchuk.net.ua/BSides_2024_Volunteer_Certificate-Levko_Kravchuk.pdf}{\underline{Certificate}} of Volunteer at \href{https://www.bsidesvancouver.com/}{\underline{B|SIDES} 2024.} Cyber Security Conference. \href{https://levko.kravchuk.net.ua/VolunteerThankYouBSides2024-Levko Kravchuk.pdf}{\underline {Click to review recommendation letter}}.
+        \vspace*{0.22cm}
+        \item \href{https://levko.kravchuk.net.ua/Crim_Record_PASS.png}{Certificate of Criminal Record: CLEARED}
+        \vspace{0.22cm}
+        \item \href{https://cs50.harvard.edu/certificates/d5cffcd9-a11d-4d5d-8785-6d7dcc92d244}{CS50's Introduction to Cybersecurity by Harvard University}
+        \vspace{0.22cm}
+        \item \href{https://levko.kravchuk.net.ua/VanLUG_Feb_2025.png}{Vancouver Linux User Group (VanLUG) Certificate about an Open Source Advocacy}
+        \vspace{0.22cm}
+        \item{Additional certificates: on my LinkedIn}
+
+        
+    \end{itemize}
+\end{comment}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+    %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+        % Publications
+    \section*{Publications \& conference presentations}
+    \begin{itemize}[left=0pt]
+        \item \href{https://medium.com/@leo2008k/how-to-apply-full-bogon-martians-networks-list-to-mikrotik-46fbffa7b813}{How to apply full bogon “Martians networks” list to MIKROTIK}
+        \vspace*{0.22cm}
+
+        \item \href{https://medium.com/@leo2008k/wifi-ssid-unicode-name-f3aa96f7d77}{Cisco Meraki \& WiFi SSID Unicode name, Funny technical configuration}
+        \vspace*{0.22cm}
+
+        \item \href{https://www.youtube.com/watch?v=9IEymzIXNzo}{How wireless networks can be dangerous for Apple products with Flipper Zero at} (\href{https://mdoyvr2024.com}{\underline{MDOYVR2024 Conference}})
+
+        \item \href{https://medium.com/p/3840de96f71b}{Testing WiFi security by Flipper zero, debug by "Net Spot", and Cisco Meraki MX68W}
+        
+        \item \href{https://vanlug.ca/events/}{Vancouver Linux User Group (Van LUG). Please review the presentation slides and locate the event on March 9, 2024.}
+
+        \item \href{https://www.meetup.com/defcon604/events/298244055/}{DefCon(DC604) meetup and presentation about DNS, Passive DNS, and DNS tunnels at Cisco office}
+
+        \item \href{https://www.meetup.com/vanlug-bc/events/304671545/?_xtd=gqFyqTI0NTg4MjIzN6Fwo2FwaQ%253D%253D&from=ref}{How DHCP Works, Linux Boot Process, and How to Use Multiple Linux Distributions via Network}
+        
+    \end{itemize}
+
+
+\end{minipage}
+}%
+\hfill
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% END of the Second PAGE %%%%%%%%%%%%%%%%%%%%%%%%%
+\adjustbox{valign=t}{%
+\begin{minipage}{11.3cm}
+    \vspace*{0.4cm}
+    %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% Work Experience on the second page
+\MySectionNoPic{Sep 2018 - Jan 2023}{PART TIME JOB: IT support (Sys.Admin) \& Consultant at {\href{https://www.embassypages.com/germany-consulate-lviv-ukraine}{Honorary Consulate of the Federal Republic of Germany in Lviv, UA}}}{Lviv, Ukraine}{ 
+\newline• \textnormal {Main duties: provide support for users, Maintain Windows 10, 11, O365, Enterprise Security, VM Ware ESXi, Firewall, IDS/IPS, Wi-Fi.}}
+
+\vspace*{0.19cm}
+
+\begin{comment}
+
+%%%%This commented text, because gap on the page. Just uncomment before change when add new eployer
+
+\MySectionNoPic{Jul 2020 - Nov 2020}{Tier 1,2 Support Engineer \& System Administrator at \underline {\href{https://www.ait.com/}{Advanced Internet Technology (AIT)}}}{Lviv, Ukraine; (Fayetteville, NC, USA (remote))}{ 
+\newline• \textnormal {Maintained DNS servers and relative DNS records, debugged DNS, and troubleshoot customer requests.}
+\newline• \textnormal {Maintained and configured Cpanel(s), supported and deployed websites to Cpanel(s) via Gitlab.}
+\newline• \textnormal {Assisted with the implementation of good security practices. Automated provision VMs via ESXi. SSL\&TLS configuration with Installation.}}
+%{\lipsum[24]}  
+
+\vspace*{0.19cm}
+            
+
+\MySectionNoPic{Mar 2018 - Mar 2020}{DevOps Engineer at Tier 1 team at \underline {\href{https://www.softserveinc.com/en-us}{SoftServe}}}{Lviv, Ukraine}{ 
+\newline• \textnormal {Collaborated with developers and other Tier teams to troubleshoot and resolve issues related to the project.}
+\newline• \textnormal {Proficient with: Git and Jenkins to automate routine tasks. Utilized a load balancer for blue-green deployment.}
+\newline• \textnormal {Monitored the functioning and accessibility of systems and software and took actions to ensure that they remained dependable.}
+\newline• \textnormal {Utilized: Jira Query Language to investigate issues, provide RCA, and create new documents to prevent future problems. Adhering to ITIL rules is crucial for the business.}}
+
+\vspace*{0.19cm}
+
+
+\MySectionNoPic{Jun 2012 - Jun 2017}{Network \& System Administrator at  Attorneys at Law \underline {"Pavlenko \& Partners"}}{Lviv, Ukraine}{ 
+\newline• \textnormal {Installed and maintained SCS, LAN, Network, and Endpoint security.(Symantec Endpoint Security)}
+\newline• \textnormal {Full-stack support of clients OS: Windows XP/7/8/10, macOS. Servers OS: Windows 2008r2, AD, WSUS, GPO, Mikrotik, UTM, mail servers, Cisco Meraki SD-WAN, Wireless, QoS, Group Policy, IDS/IPS.}
+\newline• \textnormal {{Business improvement:} Implement best security practices and technologies, Deployed scripts for install user soft, auto-configure VPN.}}
+
+\vspace{0.19cm}
+
+\end{comment}
+
+\MySectionNoPic{Aug 2008 - Mar 2015}{\underline {OurLan Internet Service Provider}}{Lviv, Ukraine}{ 
+\newline• \textnormal {Installed, maintained, administered LAN, MAN, and WAN of ISP network.}
+\newline• \textnormal {Managed smart switches, routers, and billing.}
+\newline• \textnormal {Installed, maintained, and administered fiber optic cables, UTP/STP cables, structured cabling systems (SCS), and mounted servers/switches into racks.}
+\newline• \textnormal {Troubleshooting Internet Issues, Customers SUPPORT.}}
+
+\vspace*{0.2cm}
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\end{minipage}%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% END of the THIRD PAGE %%%%%%%%%%%%%%%%%%%%
+
+}
+% Forth Page sterted here
+ % for close to prevent error manually added by me
+%\leavevmode
+\newpage % new page cmd
+
+\sidebar{sideBarColor!25}
+\newpageheader{titleBackColor}{Levko}{Kravchuk}{Tier1 Support Engineer, 4 \faLightbulbO \hspace{1mm}{Defence Engineer}}{white}
+
+% %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% SIDEBAR FOR Fourth PAGE %%%%%%%%%%%%%%%%%%%
+\adjustbox{valign=t}{%
+\begin{minipage}{7.3cm} 
+\vspace*{0.4cm} % text starts 0.4cm under the top of the header
+
+    % Add any relevant sections for the third page (skills, certificates, etc.)
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% LEFT Section %%%%%%%%%%%
+    %%%%%%%%%%%%%%%%%%%%%%%%%%% LANGUAGE  %%%%%%%%%%%%%%%%%%%%%%%%%
+        \ruleline{\textbf{Languages}}
+        \begin{tikzpicture}[every node/.style={inner sep=0pt, outer sep=0pt}]
+        \matrix [
+        column 1/.style={anchor=center,contactIcon},
+        column 2/.style={anchor=west,align=left,contactIcon},
+        column sep=5pt,
+        row sep=5pt] (contact) {
+        \node{\flag{England.png}};
+        & \node{English - Professional Knowledge};\\
+        \node{\flag{Ukrainian.png}};
+        & \node{Ukrainian - Fluent Knowledge};\\
+        \node{\flag{polish.png}};
+        & \node{Polish - Professional Knowledge};\\
+        };
+        \end{tikzpicture} 
+
+
+        % QR Code
+        \ruleline{\textbf{My CV}}
+        \scriptsize
+        \centering
+        Download my CV via the QR below \aiOverleaf.
+        \begin{center}
+            \quad
+            \qrcode[height=2cm]{
+          https://levko.kravchuk.net.ua/Levko_Kravchuk_System_Administrator_Resume.pdf} \\
+            \vspace*{0.5cm}
+        \end{center}
+
+
+\end{minipage}
+}%
+\hfill
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% MAIN CONTENT FOR Fourht PAGE %%%%%%%%%%%%%%%%%%%%%%%%%
+\adjustbox{valign=t}{%
+\begin{minipage}{11.3cm}
+    \vspace*{0.4cm}
+%--------------------------------###--------------------------------------
+% Education
+\section*{{\faGraduationCap} EDUCATION}
+
+\MySection{2025 - 2025}{OpenShift.jpg}{Workshop: DevOps Roadshow}{Red Hat OpenShift}{Victoria, BC, Canada}{
+\textnormal{
+\newline• Comprehensive understanding of networking fundamentals, IP connectivity, subnetting, switching, routing, wireless configuration, network security, and automation.
+\newline• Developed DevSecOps workflows integrated with GitOps \& SonarCube.
+\newline• Implemented security best practices including software supply chain security, secure storage in trusted registries, and secure deployments to clusters with advanced monitoring and alerting.
+\newline• Explored and applied software supply chain security measures and secured application storage in trusted registries.
+}}
+
+\vspace{0.19cm}
+
+\MySection{2024 - 2024}{CCNA.jpg}{CCNA}
+{Cisco Certified Network Associate}{Cisco Systems}{%
+\textnormal{• Completed comprehensive training in networking fundamentals, IP connectivity, subnetting, switching and routing, wireless configuration, network security, and automation.}}
+
+\vspace{0.19cm}
+
+
+\MySection{2023 - 2023}{Ansible-Workshop-Logo.png}{Workshop}
+{ITSM Ansible Automation by Event-Driven Ansible}{Vancouver, BC, Canada}{
+\textnormal{• Develop Rulebooks, configure Service Now, and automate the ticket process, i.e., automatically solving issues and closing tickets. CI/CD Ansible Automation}}
+
+\vspace{0.19cm}
+
+\MySection{2017 - 2017}{SoftServe_logo_new.png}{Certificate}{\href{https://softserve.academy/}{SoftServe IT Academy}}{Lviv, Ukraine}{DevOps Foundation Course}{\textnormal{• Installed, developed \& maintained java application according to CI/CD practices. Tested it via Locust and deployed it on AWS EC2 instances.}
+%        \vspace*{0.10cm}
+\newline• Tech stack: Linux OS, Version Control System, Networking basics, Web Scripting, Databases (SQL, NoSQL), Virtualization, Tomcat, Docker, Cloud computing, Jenkins, Monitoring, Locust, AWS.
+\\\textbf{Degree: Certificate}}
+
+%        \vspace*{0.10cm}
+
+
+\vspace*{0.22cm}
+
+\MySection{2016-2019}{IT_Step.png}{Diploma}{\href{https://itstep.org/en}{IT Academy STEP}}{Lviv, Ukraine}{Network \& Cybersecurity}{\textnormal{•Cisco lTEl + Hardware Fundamentals of Operating Systems
+•C++ Programming Language
+•Windows  10 Configuration
+•LAN Switching, Basic
+•LAN Switching, Advanced
+•Structured Cabling Systems
+•IP Routing, Basic
+•IP Routing, Advanced
+•TCP/lP Application Protocols and Services
+•Windows Server 201 9 Administration
+•Networks and Systems Security
+•Linux System Administration
+•Linux Network Administration
+•Cisco CCNAI Exploration.Network Fundamentals
+•Cisco CCNA2 Exploration. Routing Protocols and Concepts
+•Cisco CCNA3 Exploration. LAN Switching and Wireless
+•Cisco CCNA4 Exploration. Accessing the WAN
+•Cisco Certified Network Professiona}. \\\textbf{Degree: Diploma}}
+
+\vspace*{0.22cm}
+\MySection{2001-2004}{White.png}{Higher Vocational College }{Auto Mechanic}{Lviv, Ukraine}{ \\\textbf{Degree: Diploma}}
+
+    % Add the main content for the third page
+
+    % Add any additional sections you want on this page
+
+\end{minipage}
+}%
+
+\end{document}
