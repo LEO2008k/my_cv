@@ -84,7 +84,7 @@ const translations = {
 • Аналіз та додавання IP-адрес до списків репутації.
 • Практичний досвід покращення безпеки користувачів у продуктовому середовищі.`,
 
-                // TietoEVRY
+                // TietoEvry
                 work_tieto_role: "DevOps Engineer",
                 work_tieto_date: "Грудень 2020 - Липень 2023 • 2 роки 8 міс",
                 work_tieto_desc: `Основний інженер з підтримки Tenable Security Center ("Tenable.sc") та інфраструктури з понад 100 сканерів Nessus.
@@ -101,6 +101,7 @@ const translations = {
                 work_ait_desc: `IT Support Specialist (Tier 1). Спеціалізація: Linux та Windows (Server 2012/2016).
 • Налаштування мережі, Windows AD, GPO, DNS.
 • Розслідування інцидентів безпеки після хакерських атак.
+• Чищення та відновлення скомпрометованого Linux-сервера клієнта (отримав подяку).
 • Налаштування DNS (Bind), підтримка бази даних WHOIS.
 • Розгортання вебсайтів на cPanel через GitLab pipelines.
 • Дотримання SLA та високий рівень задоволеності клієнтів.`,
@@ -256,7 +257,7 @@ const translations = {
 
                 // Work History Page
                 work_title: "Work History",
-                work_subtitle: "Over 15 years of IT experience",
+                work_subtitle: "In IT since 2008",
                 work_current: "Current",
                 work_improved: "Improved skills:",
 
@@ -287,7 +288,7 @@ const translations = {
 • Analyzed and added IP addresses to reputation lists.
 • Leveraged skills in a production environment to enhance user security.`,
 
-                // TietoEVRY
+                // TietoEvry
                 work_tieto_role: "DevOps Engineer",
                 work_tieto_date: "Dec 2020 - Jul 2023 • 2 yrs 8 mos",
                 work_tieto_desc: `Primary engineer supporting Tenable Security Center ("Tenable.sc") and 100+ Nessus scanners.
@@ -303,7 +304,7 @@ const translations = {
                 work_ait_date: "Jun 2020 - Nov 2020 • 6 mos",
                 work_ait_desc: `IT Support Specialist (Tier 1). Specialized in Linux & Windows (Server 2012/2016).
 • Network configuration, Windows AD, GPO, DNS.
-• Investigated and resolved security incidents following hacker breaches.
+• Incident Response & Server Recovery: Investigated security breaches, cleaned and restored compromised customer Linux servers (received recognition).
 • Configured DNS (Bind) and supported WHOIS database.
 • Deployed websites on cPanel using GitLab pipelines.
 • Committed to upholding SLAs and ensuring high user satisfaction.`,
