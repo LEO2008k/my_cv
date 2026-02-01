@@ -12,7 +12,7 @@ const translations = {
         nav_volunteer: "Волонтерство",
 
         // Homepage
-        hero_subtitle: "System/Network Administrator | DevOps | Cyber Security Engineer",
+        hero_subtitle: "System/Network Administrator | DevOps | Cyber Security Engineer | Support Tier 1/2 Engineer",
         hero_location: "Vancouver, British Columbia, Canada",
         btn_download_cv: "Завантажити CV",
         section_learn_more: "Дізнайтесь більше",
@@ -36,7 +36,7 @@ const translations = {
 
         // About Page
         about_title: "Про мене",
-        about_subtitle: "System/Network Administrator | DevOps | Cyber Security Engineer",
+        about_subtitle: "System/Network Administrator | DevOps | Cyber Security Engineer | Support Tier 1/2 Engineer",
         bio_title: "Біографія",
         bio_text_1: "Досвідчений IT-спеціаліст з понад 15 роками досвіду в мережевому адмініструванні, системах безпеки та DevOps практиках. Народився в Україні, зараз проживаю та працюю у Vancouver, BC, Canada.",
         bio_text_2: "Спеціалізуюсь на кібербезпеці, підтримці Tier 1,2, Linux системах, мережевій інфраструктурі, автоматизації та моніторингу. Завжди готовий вчитися новому та ділитися знаннями зі спільнотою.",
@@ -210,7 +210,7 @@ const translations = {
         nav_volunteer: "Volunteer",
 
         // Homepage
-        hero_subtitle: "System/Network Administrator | DevOps | Cyber Security Engineer",
+        hero_subtitle: "System/Network Administrator | DevOps | Cyber Security Engineer | Support Tier 1/2 Engineer",
         hero_location: "Vancouver, British Columbia, Canada",
         btn_download_cv: "Download CV",
         section_learn_more: "Learn More",
@@ -234,7 +234,7 @@ const translations = {
 
         // About Page
         about_title: "About Me",
-        about_subtitle: "System/Network Administrator | DevOps | Cyber Security Engineer",
+        about_subtitle: "System/Network Administrator | DevOps | Cyber Security Engineer | Support Tier 1/2 Engineer",
         bio_title: "Biography",
         bio_text_1: "Experienced IT specialist with over 15 years of experience in network administration, security systems and DevOps practices. Born in Ukraine, currently living and working in Vancouver, BC, Canada.",
         bio_text_2: "I specialize in Cyber Security, Tier 1,2 Support Engineer, Linux systems, network infrastructure, automation and monitoring. Always ready to learn new things and share knowledge with the community.",
