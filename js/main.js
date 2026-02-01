@@ -198,6 +198,7 @@ function updatePageTitle(lang) {
         'index.html': 'Levko Kravchuk | Portfolio',
         'about.html': lang === 'uk' ? 'Про мене | Levko Kravchuk' : 'About | Levko Kravchuk',
         'work-history.html': lang === 'uk' ? 'Робоча історія | Levko Kravchuk' : 'Work History | Levko Kravchuk',
+        'education.html': lang === 'uk' ? 'Освіта | Levko Kravchuk' : 'Education | Levko Kravchuk',
         'awards.html': lang === 'uk' ? 'Сертифікати | Levko Kravchuk' : 'Certificates | Levko Kravchuk',
         'violinist.html': lang === 'uk' ? 'Скрипаль | Levko Kravchuk' : 'Violinist | Levko Kravchuk',
         'projects.html': lang === 'uk' ? 'Проєкти | Levko Kravchuk' : 'Projects | Levko Kravchuk',

@@ -53,7 +53,7 @@ const translations = {
 
                 // Work History Page
                 work_title: "Історія роботи",
-                work_subtitle: "Понад 15 років досвіду в IT",
+                work_subtitle: "в ІТ з 2008 року",
                 work_current: "Поточне місце",
                 work_improved: "Покращені навички:",
 
